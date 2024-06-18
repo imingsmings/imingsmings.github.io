@@ -21,7 +21,7 @@ jobs:
               with:
                   node-version: 18
                   cache: npm
-            - run: npm ci
+            - run: npm install
             - name: Build
               run: npm run docs:build
             - name: Move built files to root directory and clean up
